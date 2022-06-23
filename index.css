@@ -1,1 +1,74 @@
 
+/* HTML ELEMENTS */
+body {
+        color: white !important;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+} 
+nav {
+        background-color: #203454 !important;
+        min-width: 907px;
+}
+
+
+
+/* CUSTOM CREATED ELEMENTS */
+:hover{
+    outline: none;
+    box-shadow: none!important;
+}
+  
+:focus{
+    outline: none;
+    box-shadow: none !important;
+    border-color: white !important;
+}
+  
+:active{
+    outline: none;
+    box-shadow: none !important;
+}
+
+.logo-text-custom {
+    color: white;
+}
+
+.custom-button {
+    background-color: #203454 ;
+    color: white;
+    border-color: white;
+}
+
+.custom-button:hover {
+    background-color: #203454;
+    color: red;
+    border-color: red;
+}
+
+.custom-searchbox {
+    color: grey !important;
+}
+
+.custom-checkbox-input:checked {
+    background-color: #201c1c !important;
+    border-color: white !important;
+
+}
+
+.custom-checkbox-input {
+    background-color:white !important;
+    border-color: white !important;
+}
+
+/* dropdown menu background color*/
+.navbar> div > li > .dropdown-menu {
+    background-color: #203454; 
+    }
+/* dropdown menu font color*/ 
+ .navbar > div > li > .dropdown-menu a{   
+    color: white; 
+    }
+/* dropdown menu list when hover*/
+ .navbar > div > li > .dropdown-menu a:hover{
+    background-color: #203454;
+    color: red;
+    }   
