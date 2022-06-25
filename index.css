@@ -1,17 +1,24 @@
 
 /* HTML ELEMENTS */
 body {
-        color: white !important;
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+        background-color: #E7E5E5;
+        max-width: 100%;
+        overflow-x: hidden;
 } 
 nav {
+        color: white;
         background-color: #203454 !important;
         min-width: 907px;
+}
+footer {
+    color: white;
+    background-color: #203454 !important;
+    height: 60px;
 }
 
 
 
-/* CUSTOM CREATED ELEMENTS */
+/* PSEUDO-CLASSES */
 :hover{
     outline: none;
     box-shadow: none!important;
@@ -26,6 +33,13 @@ nav {
 :active{
     outline: none;
     box-shadow: none !important;
+}
+
+/* CUSTOM CSS CLASSES */
+.content {
+    background-color: white;
+    border:solid 2px #CCD1D1;
+    
 }
 
 .logo-text-custom {
