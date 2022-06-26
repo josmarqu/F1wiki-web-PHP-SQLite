@@ -1,0 +1,100 @@
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
+
+
+/* HTML ELEMENTS */
+body {
+    overflow-x: hidden;
+} 
+
+nav {
+    min-width: 907px;
+}
+
+/* SASS VARIABLES */
+$primary: #203454;
+$secondary: #E7E5E5;
+$red: red;
+
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary
+);
+
+$colors : (
+    "red": $red
+);
+
+/* PSEUDO-CLASSES */
+:hover{
+    outline: none;
+    box-shadow: none!important;
+}
+  
+:focus{
+    outline: none;
+    box-shadow: none !important;
+    border-color: white !important;
+}
+  
+:active{
+    outline: none;
+    box-shadow: none !important;
+}
+
+
+
+/* CUSTOM CSS CLASSES */
+.logo-text-custom {
+    color: $white !important;
+}
+
+.custom-button {
+    background-color: $primary ;
+    color: $white !important;
+    border-color: $white !important;
+}
+
+.custom-button:hover {
+    background-color: $primary;
+    color: $red !important;
+    border-color: $red !important;
+}
+
+.custom-searchbox {
+    color:  $gray-600 !important;
+}
+
+.custom-checkbox-input:checked {
+    background-color: #201c1c !important;
+    border-color: $white !important;
+
+}
+
+.custom-checkbox-input {
+    background-color: $white;
+    border-color: $white;
+}
+
+/* dropdown menu background color*/
+.navbar> div > li > .dropdown-menu {
+    background-color: $primary; 
+    }
+/* dropdown menu font color*/ 
+ .navbar > div > li > .dropdown-menu a{   
+    color: $white; 
+    }
+/* dropdown menu list when hover*/
+ .navbar > div > li > .dropdown-menu a:hover{
+    background-color: $primary;
+    color: $red;
+    }   
+
+.content-div {
+    background-color: $white;
+    border:solid 2px #CCD1D1;
+}
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";

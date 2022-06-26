@@ -11,24 +11,17 @@
     <link rel="icon" type="image/x-icon" href="favicon.png">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
     
-    <!-- Bootstrap icons CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
     <!-- External CSS -->
-    <link href="index.css" rel="stylesheet">
-    <link href="dark-mode-switch/dark-mode.css" rel="stylesheet">
-    <link href='fullcalendar/lib/main.css' rel='stylesheet' />
-
-    <!-- Font Awesome JS -->
-    <script src="https://kit.fontawesome.com/8bd658babd.js" crossorigin="anonymous"></script>
+    <link href="src/dark-mode-switch/dark-mode.css" rel="stylesheet">
+    <link href='src/fullcalendar/lib/main.css' rel='stylesheet' />
 
     <!-- Bundle with Popper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="src/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         
     <!-- FullCaledar.io JS -->
-    <script src='fullcalendar/lib/main.js'></script>
+    <script src='src/fullcalendar/lib/main.js'></script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
@@ -62,9 +55,9 @@
     </script>    
   </head>
 
-  <body>
+  <body class="bg-secondary">
     <header>
-      <nav class="navbar">
+      <nav class="navbar bg-primary text-white">
         <div class="d-flex flex-fill  ms-5">
           <a class="nav-item">
             <img src="src/images/logof1.png" width="100px">
@@ -100,25 +93,25 @@
     </header>
     <main>
         <div class="row me-5 ms-5 mt-5 mb-5">
-        <div class="col content">
+        <div class="col content-div">
             <h1>Last Updates</h1> 
         </div>
-        <div class="col-lg-4 ms-5 content">
+        <div class="col-lg-4 ms-5 content-div">
             <h1>Next Events</h1>
             <div id="calendar"></div>
         </div>
         </div>
-        <div align="center" class="row me-5 ms-5 mt-5 mb-5 content">
+        <div align="center" class="row me-5 ms-5 mt-5 mb-5 content-div">
           <h1>About Web</h1>
         </div>
     </main>
-    <footer>
+    <footer class="bg-primary text-white">
       <div class="row">
         <div class="col mt-3 d-flex justify-content-center">Credits</div>
         <div class="col mt-3 d-flex justify-content-center"><img src="src/images/logof1.png" width="100px"></div>
       </div>
     </footer>
     <!-- Dark mode switcher JS -->
-    <script src="dark-mode-switch/dark-mode-switch.min.js"></script>
+    <script src="src/dark-mode-switch/dark-mode-switch.min.js"></script>
   </body>
 </html>
