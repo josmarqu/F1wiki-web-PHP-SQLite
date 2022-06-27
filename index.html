@@ -10,18 +10,34 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.png">
 
+    <!-- Font Awesome JS-->
+    <script src="https://kit.fontawesome.com/8bd658babd.js" crossorigin="anonymous"></script>
+
+    <!-- Jquery JS-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+      crossorigin="anonymous">
+    </script>
+
+    <!-- header and footer script loader-->
+    <script> 
+      $(function(){
+      $("#header").load("html/common-elements/header.html"); 
+      $("#footer").load("html/common-elements/footer.html"); 
+    });
+    </script>
+
     <!-- Bootstrap CSS -->
-    <link href="styles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     
-    <!-- External CSS -->
-    <link href="src/dark-mode-switch/dark-mode.css" rel="stylesheet">
-    <link href='src/fullcalendar/lib/main.css' rel='stylesheet' />
+    <!-- FullCalendar.io CSS -->
+    <link href="css/fullcalendar-io.css" rel='stylesheet' />
 
     <!-- Bundle with Popper JS -->
-    <script src="src/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         
     <!-- FullCaledar.io JS -->
-    <script src='src/fullcalendar/lib/main.js'></script>
+    <script src="js/fullcalendar-io.min.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
@@ -56,62 +72,35 @@
   </head>
 
   <body class="bg-secondary">
-    <header>
-      <nav class="navbar bg-primary text-white">
-        <div class="d-flex flex-fill  ms-5">
-          <a class="nav-item">
-            <img src="src/images/logof1.png" width="100px">
-          </a>
-          <a class="navbar-brand logo-text-custom">
-           F1 Wiki
-          </a>
-        </div>
-        <div class="d-flex align-items-center me-5">
-          <li class="d-flex nav-item dropdown">
-            <a class="nav-link dropdown-toggle me-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Category
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Drivers</a></li>
-              <li><a class="dropdown-item" href="#">Constructors</a></li>
-              <li><a class="dropdown-item" href="#">Grands Prix Circuits</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Greatest drivers of all time</a></li>
-              <li><a class="dropdown-item" href="#">Greatest constructors of all time</a></li>
-            </ul>
-          </li>
-          <form class="d-flex me-5">
-            <input class="form-control me-2 bg-light custom-searchbox" type="search" placeholder="Fernando Alonso ..." aria-label="Search">
-            <button class="btn btn-outline custom-button" type="submit">Search</button>
-          </form> 
-          <div class="form-check form-switch">
-            <input type="checkbox" class="form-check-input custom-checkbox-input" id="darkSwitch" />
-            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
-          </div>  
-        </div>
-      </nav>
-    </header>
+    <div id="header"></div>
     <main>
-        <div class="row me-5 ms-5 mt-5 mb-5">
-        <div class="col content-div">
-            <h1>Last Updates</h1> 
-        </div>
-        <div class="col-lg-4 ms-5 content-div">
-            <h1>Next Events</h1>
-            <div id="calendar"></div>
-        </div>
+      <div class="container-fluid">
+        <div class="row fixed  ms-5 me-5 mt-5 mb-5">
+          <div class="col content-div">
+              <div class="row">
+                <div class="col"><h1>F1 2022</h1></div>
+                <div class="col-2  bg-primary ">
+                  <div class="row" style="height: 100%;">
+                    <div class="col no-padding">
+                      <button class="btn btn-primary btn-prev-next"  type="submit"><i class="fa-solid fa-chevron-left"></i></button>
+                    </div>
+                    <div class="col no-padding">
+                      <button class="btn btn-primary btn-prev-next"  type="submit"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-4 ms-5 content-div calendar-div">
+              <h1>Next Events</h1>
+              <div id="calendar"></div>
+          </div>
         </div>
         <div align="center" class="row me-5 ms-5 mt-5 mb-5 content-div">
           <h1>About Web</h1>
         </div>
-    </main>
-    <footer class="bg-primary text-white">
-      <div class="row">
-        <div class="col mt-3 d-flex justify-content-center">Credits</div>
-        <div class="col mt-3 d-flex justify-content-center"><img src="src/images/logof1.png" width="100px"></div>
       </div>
-    </footer>
-    <!-- Dark mode switcher JS -->
-    <script src="src/dark-mode-switch/dark-mode-switch.min.js"></script>
+    </main>
+    <div id="footer"></div>
   </body>
 </html>

@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>header element F1 wiki</title>
+    <!-- Dark mode CSS-->
+    <link href="../../css/dark-mode.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar bg-primary text-white">
+        <div class="d-flex flex-fill  ms-5">
+          <a class="nav-item">
+            <img src="/img/logof1.png" width="100px">
+          </a>
+          <a class="navbar-brand logo-text-custom">
+          F1 Wiki
+          </a>
+        </div>
+        <div class="d-flex align-items-center me-5">
+          <li class="d-flex nav-item dropdown">
+            <a class="nav-link dropdown-toggle me-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Drivers</a></li>
+              <li><a class="dropdown-item" href="#">Constructors</a></li>
+              <li><a class="dropdown-item" href="#">Grands Prix Circuits</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Greatest drivers of all time</a></li>
+              <li><a class="dropdown-item" href="#">Greatest constructors of all time</a></li>
+            </ul>
+          </li>
+          <form class="d-flex me-5">
+            <input class="form-control me-2 bg-light custom-searchbox" type="search" placeholder="Fernando Alonso ..." aria-label="Search">
+            <button class="btn btn-outline custom-button" type="submit">Search</button>
+          </form> 
+          <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input custom-checkbox-input" id="darkSwitch"/>
+            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+          </div>  
+        </div>
+      </nav>
+    </header>
+    <!-- Dark mode switcher JS -->
+    <script src="../../js/dark-mode-switch.min.js"></script>
+  </body>
+</html>
